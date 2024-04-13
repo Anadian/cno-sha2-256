@@ -38,11 +38,14 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	import Test from 'cno-test';
 //# Constants
 const FILENAME = 'lib.test.js';
-const PANGRAM_BUFFER = Buffer.from( 'The quick brown fox jumps over the lazy dog.' );
+const PANGRAM_STRING = 'The quick brown fox jumps over the lazy dog.';
+const PANGRAM_BUFFER = Buffer.from( PANGRAM_STRING );
 const PANGRAM_SHA256 = Buffer.from( 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c', 'hex' );
-const LOREM_BUFFER = Buffer.from( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' );
+const LOREM_STRING = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+const LOREM_BUFFER = Buffer.from( LOREM_STRING );
 const LOREM_SHA256 = Buffer.from( '2d8c2f6d978ca21712b5f6de36c9d31fa8e96a4fa5d8ff8b0188dfb9e7c171bb', 'hex' );
-const EMPTY_BUFFER = Buffer.from( '' );
+const EMPTY_STRING = '';
+const EMPTY_BUFFER = Buffer.from( EMPTY_STRING );
 const EMPTY_SHA256 = Buffer.from( 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'hex' );
 
 //## Errors
@@ -164,6 +167,30 @@ Test.test( 'getSHA256FromBuffer:returns', function( t ){
 					}
 				],
 				expected: Buffer.concat( [ DefaultExport.MULTIHASH_PREFIX, EMPTY_SHA256 ] )
+			},
+			input_options_pangram_string: {
+				args: [
+					{
+						buffer: PANGRAM_STRING
+					}
+				],
+				expected: PANGRAM_SHA256
+			},
+			input_options_lorem_string: {
+				args: [
+					{
+						buffer: LOREM_STRING
+					}
+				],
+				expected: LOREM_SHA256
+			},
+			input_options_empty_string: {
+				args: [
+					{
+						buffer: EMPTY_STRING
+					}
+				],
+				expected: EMPTY_SHA256
 			}
 		}
 	};

@@ -73,7 +73,8 @@ const MULTIHASH_PREFIX = Buffer.from( [ 0x12, 0x20 ] );
 | --- | --- |
 | 0.0.1 | WIP |
 */
-function getSHA2FromU8A( input_options = {} ){
+/* c8 ignore start */
+/*function getSHA2FromU8A( input_options = {} ){
 	const FUNCTION_NAME = 'getSHA2FromU8A';
 	const DEFAULT_OPTIONS = {
 		noop: false, // Skip primary functionality.
@@ -106,7 +107,8 @@ function getSHA2FromU8A( input_options = {} ){
 	//Return
 	this?.logger?.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
-} // getSHA2FromU8A
+} // getSHA2FromU8A */
+/* c8 ignore stop */
 
 /**
 ### getSHA256FromBuffer
