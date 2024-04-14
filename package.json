@@ -23,7 +23,14 @@
 		"libre",
 		"free",
 		"open",
-		"mit"
+		"mit",
+		"sha",
+		"sha2",
+		"hash",
+		"degiest",
+		"buffer",
+		"multihash",
+		"cno"
 	],
 	"scripts": {
 		"test": "node --test ./src/lib.test.js",
