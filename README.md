@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/Anadian/cno-sha2-256)](https://github.com/Anadian/cno-sha2-256/blob/main/LICENSE)
 [![ci](https://github.com/Anadian/cno-sha2-256/actions/workflows/ci.yml/badge.svg)](https://github.com/Anadian/cno-sha2-256/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Anadian/cno-sha2-256/badge.svg?branch=main)](https://coveralls.io/github/Anadian/cno-sha2-256?branch=main)
+[![NPM Version](https://img.shields.io/npm/v/cno-sha2-256)](https://www.npmjs.com/package/cno-sha2-256)
 
 > Micropackage: an implementation-agnostic module for getting a SHA2-256 hash digest for a Node Buffer.
 # Table of Contents
