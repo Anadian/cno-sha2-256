@@ -1,6 +1,6 @@
 {
 	"name": "cno-sha2-256",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Micropackage: an implementation-agnostic module for getting a SHA2-256 hash digest for a Node Buffer.",
 	"repository": {
 		"type": "git",
