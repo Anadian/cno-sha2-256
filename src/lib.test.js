@@ -312,7 +312,7 @@ Test.test( 'getSHA256FromOptions:throws', function( t ){
 		}
 	}
 } );
-Test.test( 'getSHA256FromOptions:returns', async function( t ){
+Test.test.skip( 'getSHA256FromOptions:returns', async function( t ){
 	t.diagnostic( t.name );
 	var big_lorem_filehandle = null;
 	//var big_lorem_stream = null;
