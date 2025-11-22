@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Anadian/cno-sha2-256/compare/v0.0.1...v0.0.2) (2025-11-22)
+
+
+### Documentation
+
+* Added NPM badge to README.md. ([cbcf03c](https://github.com/Anadian/cno-sha2-256/commit/cbcf03c3018fd8323ea5dcc21406eeb5ce05c57b))
+
 ### 0.0.1 (2024-04-14)
 
 
